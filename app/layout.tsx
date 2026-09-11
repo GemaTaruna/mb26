@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Pengumuman Hasil Seleksi — Marching Band Gema Taruna",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
-      <body className={inter.className}>{children}</body>
+      <body className="font-sans antialiased bg-slate-50 text-slate-900">{children}</body>
     </html>
   );
 }
