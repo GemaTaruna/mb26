@@ -12,7 +12,7 @@ import { ChevronRight, Clock } from "lucide-react";
 import Countdown from "./Countdown";
 
 const ANNOUNCEMENT_DATE =
-  process.env.NEXT_PUBLIC_ANNOUNCEMENT_DATE || "2026-09-11T13:00:00+07:00";
+  process.env.NEXT_PUBLIC_ANNOUNCEMENT_DATE || "2026-09-11T14:00:00+07:00";
 
 export default function LandingContent() {
   const [mounted, setMounted] = useState(false);
