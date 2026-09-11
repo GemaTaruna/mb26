@@ -2,15 +2,21 @@
  * components/Header.tsx
  * Header website — merah putih, nama sekolah & satuan.
  */
+import Image from "next/image";
+
 export default function Header() {
   return (
     <header className="bg-red-700 text-white shadow-lg">
-      <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-center gap-4">
-        {/* Placeholder logo — ganti dengan <Image> jika ada file logo */}
-        <div className="w-14 h-14 md:w-16 md:h-16 bg-white/15 rounded-full border-2 border-white/30 flex items-center justify-center shrink-0">
-          <span className="text-[9px] text-white/70 font-bold text-center leading-tight">
-            LOGO
-          </span>
+      <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-center gap-3 md:gap-4">
+        <div className="relative w-14 h-14 md:w-16 md:h-16 shrink-0 drop-shadow-md">
+          <Image
+            src="/logo.png"
+            alt="Logo Taruna SMK Negeri 2 Sragen"
+            width={64}
+            height={64}
+            className="w-full h-full object-contain"
+            priority
+          />
         </div>
 
         <div className="text-center">

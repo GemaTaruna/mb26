@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   description:
     "Pengumuman Hasil Seleksi Calon Taruna Angkatan XVI — PASSUS Marching Band Gema Taruna, SMK Negeri 2 Sragen.",
   robots: "noindex, nofollow", // Jangan diindeks mesin pencari
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
